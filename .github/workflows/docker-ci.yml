@@ -38,7 +38,7 @@ jobs:
         run: selenium/manager/linux/selenium-manager --browser chrome
 
       - name: Launch Web Service
-        run: docker-compose up -d
+        run: docker compose up -d
 
       - name: Run Selenium Tests
         run: cd selenium && mvn test
